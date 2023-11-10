@@ -1,0 +1,23 @@
+.committee{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.com-title{
+    display: flex;
+    justify-content: center;
+}
+
+
+.com-mems{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.com-mem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

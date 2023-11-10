@@ -1,0 +1,40 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 20rem;
+}
+
+.info-cnt {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.info-cnt p {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+
+.icon {
+  width: 2vw;
+}
+.icon1 {
+  width: 1.3vw;
+}
+

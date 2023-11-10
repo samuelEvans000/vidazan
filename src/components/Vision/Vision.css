@@ -1,0 +1,60 @@
+.vision{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: black;
+}
+.vision-img{
+     position: relative;
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+}
+.vision-img img{
+    display: block;
+    width: 100vw;
+    height: 40vh;
+    opacity: 0.62;
+    /* filter: grayscale(40%); */
+}
+
+.vision-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4vw; /* Responsive font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+.cnt-img1{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.42;
+    /* filter:; */
+}
+
+.vision-cnt{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.8vw; /* Responsive font size */
+    font-weight: 600;
+    justify-content: space-evenly;
+    
+}
+.cnt-img2{
+    width: 38vw;
+    /* margin-left: 0rem; */
+}
+.vision-text{
+    width: 40vw;
+}
