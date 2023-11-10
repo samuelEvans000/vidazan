@@ -61,7 +61,7 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   align-items: center;
   /* padding: 10rem 6rem; */
   /* border: 1px solid #000; */
@@ -71,7 +71,7 @@
 }
 
 .box img {
-  width: 25vw;
+  width: 20vw;
   border-radius: 8px;
   margin-bottom: 0;
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
