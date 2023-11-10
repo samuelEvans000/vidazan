@@ -21,7 +21,7 @@
     width: 20vw;
     height: 12vh;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 3vh;
     object-fit: contain;
   }
   
@@ -32,14 +32,14 @@
   .navbar-content-1 {
     display: flex;
     justify-content: flex-end;
-    color: #000;
+    /* color: rgb(48, 133, 212); */
     font-size: small;
     font-weight: bolder;
 
   }
 
   .navbar-content-2{
-    color: #000;
+    /* color: #3085D6 ; */
     font-size: large;
     display: flex;
     justify-content: flex-end;
@@ -72,8 +72,12 @@
    */
   .nav-item a {
     text-decoration: none;
-    color: #000;
+    color: #14528d;
     font-weight: 600;
+  }
+
+  .nav-item a:hover{
+    color: grey;
   }
   
 
@@ -97,6 +101,7 @@
   
   /* Style the dropdown content */
   .dropdown-content {
+    border-top: 2px solid #3085D6;
     margin-bottom: 0.2rem;
     display: none;
     position: absolute;
@@ -108,7 +113,7 @@
 
 .dropdown-content a {
     float: none;
-    color: black;
+    color: #3085D6;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -116,9 +121,9 @@
 }
 
 
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
     background-color: #ddd;
-}
+} */
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {

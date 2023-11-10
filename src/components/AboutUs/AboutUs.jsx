@@ -25,7 +25,7 @@ function AboutUs() {
             <h1><u>About Us</u></h1>
         </div>
         <div className="box1">
-          <div className="dna-img">
+          <div className="abt-img ">
             <img src={dna}></img>
           </div>
           <div className="abt-text">
@@ -41,7 +41,7 @@ function AboutUs() {
           </div>
         </div>
         <div className="box2">
-          <div className="dna-img">
+          <div className="abt-img ">
             <img src={dna}></img>
           </div>
           <div className="abt-text">
@@ -60,7 +60,7 @@ function AboutUs() {
           </div>
         </div>
         <div className="box3">
-          <div className="dna-img">
+          <div className="abt-img ">
             <img src={dna}></img>
           </div>
           <div className="abt-text">
@@ -78,7 +78,7 @@ function AboutUs() {
           </div>
         </div>
         <div className="box2">
-          <div className="dna-img">
+          <div className="abt-img ">
             <img src={dna}></img>
           </div>
           <div className="abt-text">

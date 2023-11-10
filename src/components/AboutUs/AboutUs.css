@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    background-color: #fff;
 }
 
 .abt{
@@ -25,14 +26,14 @@
 }
 
 
-.dna-img{
+.abt-img{
     /* border: 1px solid #000; */
 display: flex;
 padding: 40px 40px;
 width: 45vw;
 }
 
-.dna-img img{
+.abt-img img{
     border-radius: 50px;
 }
 .abt-text{
