@@ -1,42 +1,53 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
-import "./imageSlider.css"; 
+// ImageSlider.js
+import React, { useState, useEffect } from 'react';
+import './imageSlider.css';
 
 const ImageSlider = ({ images }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); 
-
-    return () => clearInterval(interval);
-  }, [images]);
-
-  const handleDotClick = (index) => {
-    setCurrentImageIndex(index);
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [currentIndex]);
+
   return (
-    <div className="image-slider">
-      <div className="slider-container">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`slider-image ${index === currentImageIndex ? "active" : ""}`}
-          >
-            <img src={image} alt={`Image ${index}`} />
-          </div>
-        ))}
-      </div>
+    <div className="slider-container">
+      <button onClick={handlePrev} className="arrow-button prev-button">
+        &lt;
+      </button>
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Slide ${index + 1}`}
+          className={`slider-image ${index === currentIndex ? 'active' : ''}`}
+        />
+      ))}
+      <button onClick={handleNext} className="arrow-button next-button">
+        &gt;
+      </button>
       <div className="dots-container">
         {images.map((_, index) => (
           <span
-            key={`dot-${index}`} 
-            className={`dot ${index === currentImageIndex ? "active" : ""}`}
+            key={index}
             onClick={() => handleDotClick(index)}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
           ></span>
         ))}
       </div>

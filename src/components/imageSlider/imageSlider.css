@@ -1,74 +1,61 @@
-.image-slider {
-    width: 100vw;
-    max-width: 100%;
-    /* margin: 0 auto; */
-    margin-top: 0;
-    height: auto;
-    overflow: hidden;
-}
-
+/* ImageSlider.css */
 .slider-container {
-    display:contents;
-    transition: transform 4s ease-in-out;
-    width: 100vw; /* Use a percentage width to make it responsive */
-    max-width: 600px; /* Adjust the maximum width as needed */
-    overflow: hidden;
-    margin-top: 0;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .slider-image {
-    /* flex: 0 0 100%; */
-    /* margin-right: 0; */
-    margin-top: 0;
-    transition: opacity 2s ease-in-out, transform 4s ease-in-out;
-    visibility: hidden;
-    display: none;
-    width: 100%;
-    height: 90vh;
-    scale: (0.8);
-}
-
-.slider-image img {
-    width: 100vw;
-    /* height:100vh ; */
-    object-fit: contain;
-    margin-top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  transition: opacity 2s ease-in-out, transform 4s ease-in-out;
+  scale: (1);
 }
 
 .slider-image.active {
-    visibility: visible;
-    display: block;
-    /* transform: scale(1); */
+  display: block;
+  /* transform: scale(1); */
 }
 
-  
-  .dots-container {
-    /* position: absolute; */
-    /* bottom: -62%; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem; 
-  }
-  
-  .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .dot.active {
-    background-color: #333;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .slider-container {
-      width: 100%; /* Adjust the maximum width for smaller screens */
-    }
-  }
-  
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+  background-color: rgb(49, 49, 58); /* Change to your preferred active dot color */
+}
