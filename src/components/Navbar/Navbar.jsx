@@ -2,9 +2,18 @@
 // import AboutUs from "../AboutUs/AboutUs";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo from "/assets/logo.png";
 
 function Navbar() {
+
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -12,7 +21,10 @@ function Navbar() {
             <img src={logo} />
         </Link>
       </div>
-
+      <div className="hamburger-icon" onClick={toggleMobileMenu}>
+        ☰
+      </div>
+      <div className={`navbar-content ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
       <div className="navbar-content">
         <nav className="navbar-content-1">
           <ul className="nav-list-1">
@@ -66,6 +78,7 @@ function Navbar() {
             </li>
           </ul>
         </nav>
+      </div>
       </div>
     </div>
   );

@@ -130,35 +130,67 @@
     display: block;
 }
 
+.hamburger-icon {
+  display: none; /* Hide by default on larger screens */
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+}
 
-
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar img {
-      margin: 10px 0;
-      width: 100px; 
-    }
-  
-    .navbar-content {
-      margin: 20px 0;
-      text-align: center;
-    }
-  
-    .nav-list {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-item {
-      margin: 5px 0;
-      padding: 5px 10px;
-    }
+@media (max-width: 1280px) {
+  .hamburger-icon {
+    display: block; /* Display on smaller screens */
   }
-  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+  }
+
+  .navbar img {
+    margin: 10px 0;
+    width: 100px;
+  }
+
+  .navbar-content {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%; /* Take up full width on smaller screens */
+    display: none;
+  }
+
+  .nav-list-1,
+  .nav-list-2 {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .nav-item {
+    margin: 5px 0;
+    padding: 5px 10px;
+  }
+
+  .dropdown {
+    width: 100%; /* Take up full width for dropdown on smaller screens */
+  }
+
+  .dropdown-content {
+    position: static; /* Remove absolute positioning for dropdown content */
+    display: none;
+    max-height: none; /* Allow dropdown content to take full height */
+    text-align: center; /* Center-align dropdown items */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar-content.mobile-menu-open {
+    display: flex; /* Show content when mobile menu is open */
+    flex-direction: column;
+  }
+}
   
   
   

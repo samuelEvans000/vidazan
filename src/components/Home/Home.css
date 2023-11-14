@@ -8,7 +8,7 @@
   /* position: relative; */
   display: flex;
   width: 100vw;
-  margin-bottom: -1rem;
+  /* margin-bottom: -1rem; */
   background-color: rgb(13, 28, 83);
 }
 
@@ -25,7 +25,7 @@
 
 .dna-img img {
   border-radius: 50px;
- 
+ width: 45vw;
 }
 
 .img-text {
@@ -54,7 +54,7 @@
   display: flex;
   /* width: 40vw; */
   justify-content: center;
-  gap: 6rem;
+  gap: 10rem;
   margin-bottom: 4rem;
 }
 
@@ -98,5 +98,46 @@
   overflow: hidden;
 }
 .content p {
+    margin-left: 2.5rem;
+    margin-right: 1rem;
   font-weight: 600;
+}
+
+
+@media (max-width: 786px){
+  .dna-img {
+  
+    display: flex;
+    /* padding: 2vw 2vw; */
+    width: 40vw;
+    object-fit: contain;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .dna-img img{
+    width: 30vw;
+    border-radius: 25px;
+    
+  }
+  
+  .img-text{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+  }
+  .last {
+    display: flex;
+    font-size: 0.8rem;
+  }
+    .last-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 60%;
+    }
+    .box img{
+        width: 100%;
+    }
 }
