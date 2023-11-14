@@ -130,12 +130,7 @@
     display: block;
 }
 
-.hamburger-icon {
-  display: none; /* Hide by default on larger screens */
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding: 10px;
-}
+
 
 @media (max-width: 1280px) {
   .hamburger-icon {
@@ -157,7 +152,6 @@
     margin: 20px 0;
     text-align: center;
     width: 100%; /* Take up full width on smaller screens */
-    display: none;
   }
 
   .nav-list-1,
@@ -186,10 +180,6 @@
     display: block;
   }
 
-  .navbar-content.mobile-menu-open {
-    display: flex; /* Show content when mobile menu is open */
-    flex-direction: column;
-  }
 }
   
   

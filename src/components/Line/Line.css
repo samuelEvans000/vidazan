@@ -3,6 +3,28 @@
     width: 80vw;
     padding: 0 10vw;
   }
+
+  .line-img1{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+.line-img3{
+  display:flex ;
+  gap: 4rem;
+  justify-content: space-around;
+  
+}
+.line-img3 img{
+  width: 40%;
+}
+.line-img5{
+  display: flex;
+  justify-content:center ;
+}
+.line-img5 img{
+  width: 80%;
+}
   .container {
     display: flex;
     flex-direction: column;

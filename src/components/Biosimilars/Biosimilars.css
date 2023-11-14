@@ -3,6 +3,13 @@
     width: 80vw;
     padding: 0 10vw;
   }
+
+  .biosim-img1{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+
   .container {
     display: flex;
     flex-direction: column;

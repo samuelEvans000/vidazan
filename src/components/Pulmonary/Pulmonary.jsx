@@ -2,6 +2,7 @@
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Pulmonary.css'
+import dna from '/assets/dna.jpg'
 
 function Pulmonary() {
   return (
@@ -29,6 +30,11 @@ function Pulmonary() {
           These solution, suspension, and powder formulations are delivered to the respiratory tract via drug delivery devices like aerosols, dry powder inhalers (DPI), metered dose inhalers (MDI), and nebulizers, amongst other devices. Inhalation preparations are most commonly used to treat respiratory ailments such as asthma, chronic bronchitis, emphysema, and bronchiectasis.
           </li>
         </ul>
+    </div>
+    <div className='pulm-img1'>
+        <img src={dna}></img>
+        <img src={dna}></img>
+        <img src={dna}></img>
     </div>
     <div>
         <Footer/>
