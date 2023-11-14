@@ -1,0 +1,21 @@
+.line-container {
+    text-align: center;
+    width: 80vw;
+    padding: 0 10vw;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .container h1 {
+      font-size: 1.5em;
+    }
+  
+    .container h2 {
+      font-size: 1.2em;
+    }
+  
+    .container h3 {
+      font-size: 1em;
+    }
+  }
+  
