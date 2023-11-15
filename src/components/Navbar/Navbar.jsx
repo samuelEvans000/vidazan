@@ -39,7 +39,6 @@ function Navbar() {
               <div className="dropdown">
               <Link to="/formulation-reasearch-solutions">
                 Formulation Reasearch Solution ↓
-
               </Link>
                 <div className="dropdown-content">
                   <Link to="/drug-discovery-research-solutions ">Drug discovery research solutions </Link>

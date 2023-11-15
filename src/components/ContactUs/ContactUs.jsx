@@ -17,7 +17,7 @@ function ContactUs() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    emailjs.init("srFpZGWVGPaiVmipr");
+    emailjs.init("oq7QU2c-U02hqjxtL");
   }, []);
   const sendMail = () => {
     const params = {
@@ -26,9 +26,12 @@ function ContactUs() {
       message: message,
     };
 
-    emailjs.send("service_xpeoro7", "template_kv49v15", params).then(
+    emailjs.send("service_wxtiezi", "template_nzgnd0l", params).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
+        setFullName('');
+        setEmail('');
+        setMessage('');
       },
       function (error) {
         console.log("FAILED...", error);
