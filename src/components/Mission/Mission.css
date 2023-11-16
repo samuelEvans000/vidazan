@@ -39,10 +39,10 @@
 
 .vision-cnt{
     display: flex;
-    width: 100vw;
+    width: 80vw;
     align-items: center;
     position: absolute;
-    top: 110%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -58,3 +58,16 @@
 .vision-text{
     width: 40vw;
 }
+
+@media (max-width: 800px) {
+    .vision-img2{
+      width: 100vw;
+    }
+    .cnt-img2{
+      width: 60vw !important;
+    }
+    .vision-text{
+      width: 100% !important;
+      font-size: 0.9rem;
+    }
+  }

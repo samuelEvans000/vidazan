@@ -12,15 +12,12 @@ function Mission() {
         <Navbar />
       </div>
       <div className="vision">
-        <div className="vision-img">
-          <img src={dna}></img>
+        <img className="cnt-img1" src={vmv}></img>
           <h1 className="vision-title">
             <u>Our Mission</u>
           </h1>
-        </div>
-        <img className="cnt-img1" src={vmv}></img>
         <div className="vision-cnt">
-          <div>
+          <div className="vision-img2">
             <img className="cnt-img2" src={dna}></img>
           </div>
           <div className="vision-text">

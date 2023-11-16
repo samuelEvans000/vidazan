@@ -40,10 +40,10 @@
 
 .vision-cnt{
     display: flex;
-    width: 100vw;
+    width: 80vw;
     align-items: center;
     position: absolute;
-    top: 110%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;

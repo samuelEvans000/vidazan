@@ -29,6 +29,7 @@
     font-weight: bold;
     text-align: center;
     width: 100%;
+    box-sizing: border-box;
   }
   
   .cnt-img1 {
@@ -40,18 +41,17 @@
   
   .vision-cnt {
     display: flex;
-    flex-direction: column;
+    width: 80vw;
     align-items: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 3.8rem; /* Responsive font size */
+    font-size: 1.8vw; /* Responsive font size */
     font-weight: 600;
-    text-align: center; /* Center text on smaller screens */
-    padding: 2rem; /* Add padding for better spacing */
-  
+    justify-content: space-evenly;
+    
     /* Adjustments for smaller screens */
     @media (max-width: 768px) {
       font-size: 1.5rem; /* Adjust font size for smaller screens */
@@ -70,6 +70,24 @@
     /* Adjustments for smaller screens */
     @media (max-width: 768px) {
       max-width: 100%; /* Use full width on smaller screens */
+    }
+  }
+
+  @media (max-width: 800px) {
+    .vision-img2{
+      width: 100vw;
+    }
+    .cnt-img2{
+      width: 60vw !important;
+      position: relative;
+    left: 20vw;
+    }
+    .vision-text{
+      width: 100% !important;
+      font-size: 0.9rem;
+    }
+    .vision-cnt{
+      flex-direction: column;
     }
   }
   
