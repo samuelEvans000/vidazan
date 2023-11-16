@@ -95,4 +95,9 @@
   .line-img5{
     display: none;
   }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
