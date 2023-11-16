@@ -6,6 +6,10 @@ import logo from "/assets/logo.png";
 import SideBar from "./Sidebar";
 
 function Navbar() {
+
+  
+
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -21,7 +25,8 @@ function Navbar() {
           <ul className="nav-list-1">
             <li className="nav-item">
               <div className="dropdown">
-                <Link  to="/about">About Us </Link>
+                <Link  to="/about">About Us ↓
+ </Link>
                 <div className="dropdown-content">
                   <Link to="/our-vision">Our Vision</Link>
                   <Link to='/our-mission'>Our Mission</Link>
@@ -35,7 +40,7 @@ function Navbar() {
             <li className="nav-item">
               <div className="dropdown">
               <Link to="/formulation-reasearch-solutions">
-                Formulation Reasearch Solution
+                Formulation Reasearch Solution ↓
               </Link>
                 <div className="dropdown-content">
                   <Link to="/drug-discovery-research-solutions ">Drug discovery research solutions </Link>
@@ -70,7 +75,7 @@ function Navbar() {
           </ul>
         </nav>
       </div>
-    </div>
+      </div>
   );
 }
 

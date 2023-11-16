@@ -49,7 +49,7 @@ function Home() {
           </div>
           <div className="content">
             <h4>Our Vision</h4>
-            <p>We strive to make all the drugs <br></br>affordable to all.</p>
+            <p>We strive to make all the drugs affordable to all.</p>
             
             <Link to='/our-vision'>
               <button className="read">Read More</button>
@@ -62,7 +62,7 @@ function Home() {
           </div>
           <div className="content">
             <h4>Our Mission</h4>
-            <p>VidaZan gives a complete solution <br></br>for R&D needs.</p>
+            <p>VidaZan gives a complete solution for R&D needs.</p>
             <Link to='/our-mission'>
               <button className="read">Read More</button>
             </Link>
@@ -74,7 +74,7 @@ function Home() {
           </div>
           <div className="content">
             <h4>Our Values</h4>
-            <p>We are committed to serve with <br></br>high quality and low price.</p>
+            <p>We are committed to serve with high quality and low price.</p>
             <Link to='/our-values'>
               <button className="read">Read More</button>
             </Link>

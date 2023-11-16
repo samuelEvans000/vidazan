@@ -27,14 +27,16 @@
     padding: 20px;
     width: 100%;
     justify-content: center;
-  }
-  
-  .abt-img img {
+
+}
+
+.abt-img img {
     max-width: 100%;
     height: auto;
     border-radius: 10px; /* Adjust the border-radius as needed */
   }
-  
+
+
   .abt-text {
     font-size: 16px; /* Adjust the font size as needed */
     font-style: oblique;
@@ -42,4 +44,5 @@
     margin: 1rem;
     width: 100%;
   }
-  
+
+

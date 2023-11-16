@@ -12,7 +12,7 @@
   /* position: relative; */
   display: flex;
   width: 100vw;
-  margin-bottom: -1rem;
+  /* margin-bottom: -1rem; */
   background-color: rgb(13, 28, 83);
 }
 
@@ -64,7 +64,7 @@
   display: flex;
   /* width: 40vw; */
   justify-content: center;
-  gap: 6rem;
+  gap: 10rem;
   margin-bottom: 4rem;
   align-items: center;
 }
@@ -102,38 +102,7 @@
   overflow: hidden;
 }
 .content p {
+    margin-left: 2.5rem;
+    margin-right: 1rem;
   font-weight: 600;
-}
-
-
-/* Responsive styles for smaller screens */
-@media screen and (max-width: 600px) {
-  .intro {
-    flex-direction: column;
-  }
-
-  .dna-img {
-    width: 100%;
-  }
-
-  .img-text {
-    width: 100%;
-  }
-
-  .img-text p {
-    font-size: 4vw;
-  }
-
-  .last-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .box {
-    width: 80vw;
-  }
-
-  .box img {
-    width: 80vw;
-  }
 }

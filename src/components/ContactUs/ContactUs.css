@@ -7,35 +7,98 @@
   align-items: center;
 }
 
-.info {
-  display: flex;
-  gap: 20rem;
-}
-
-.info-cnt {
+.form{
+  border: 1px solid #000;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+  gap: 2rem;
+  background-color: #212933;
+  padding: 6rem 16rem;
+  border-radius: 2rem;
 }
 
-.info-cnt p {
-  font-size: 1.5vw;
-  font-weight: 600;
-}
-
-.icons {
+.name-mail{
   display: flex;
+  gap: 6rem;
+}
+
+.name, .mail{
+  border-radius: 4px;
+  background-color: #b8bdc5;
+ 
+  padding: 1rem 1rem;
+}
+
+.message{
+  border-radius: 4px;
+  background-color: #b8bdc5;
+  padding: 0rem 2rem 16rem 2rem;
+}
+
+.send-mail{
+  border: 1px solid #000;
+  background-color: #b8bdc5;
+}
+
+.icons{
+  display: flex;
+  /* margin-left: 35vw; */
   justify-content: center;
-  gap: 1rem;
-  cursor: pointer;
+  margin-top: 2rem;
+  gap: 1.2rem;
+  /* width: 15vw; */
+}
+
+.iconf,.icong,.icont,.icony{
+  display: flex;
+  border: 1px solid #000;
+  /* width: 1rem; */
+  background-color: #f8f5f5;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
 }
 
 
-.icon {
-  width: 2vw;
+.icon-g,.icon-t{
+  width: 1.5vw;
 }
-.icon1 {
-  width: 1.3vw;
+.icon-fb{
+  width: 1vw;
+}
+.icon-y{
+  width: 1.8vw;
 }
 
+.iconf:hover{
+  color: #fff;
+    background-color: #1e83fb;
+}
+.icong:hover{
+  color: #fff;
+    background-color: #25fb1e;
+}
+.icont:hover{
+  color: #fff;
+    background-color: #31373f;
+}
+.icony:hover{
+  color: #fff;
+    background-color: red;
+}
+
+@media(max-width: 1250px){
+    .form{
+      background-color:#212933;
+      padding: 1rem 4rem;
+    }
+    .name-mail{
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      
+      /* width: 90%; */
+    }
+    .name, .mail{
+      padding: 1rem 4rem;
+    }
+}

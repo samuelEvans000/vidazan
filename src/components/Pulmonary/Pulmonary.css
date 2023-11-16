@@ -9,6 +9,15 @@
     line-height: 2rem;
   }
   
+ .pulm-img1{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+ }
+ .pulm-img1 img{
+  width: 30%;
+ }
+
   /* Responsive Styles */
   @media screen and (max-width: 600px) {
     .container h1 {
