@@ -4,6 +4,12 @@
     padding: 0 10vw;
   }
 
+  .drug-img1{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
   .drug-img2{
     display: flex;
   justify-content: center;
@@ -25,6 +31,14 @@
   
     .container h3 {
       font-size: 1em;
+    }
+    .drug-img1, .drug-img2, .drug-img3 {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    .drug-img2 img, .drug-img3 img{
+      width: 80%;
     }
   }
   

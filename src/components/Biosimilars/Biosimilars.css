@@ -4,7 +4,7 @@
     padding: 0 10vw;
   }
 
-  .biosim-img1{
+  .biosim-img1, .biosim-img2{
     display: flex;
     justify-content: space-around;
     gap: 4rem;
@@ -51,6 +51,11 @@
   }
   
   /* Responsive Styles */
+  @media screen and (max-width: 1200px) { 
+    .biosim-img1{
+      flex-direction: column;
+    }
+  }
   @media screen and (max-width: 600px) {
     .container h1 {
       font-size: 1.5em;
@@ -62,6 +67,9 @@
   
     .container h3 {
       font-size: 1em;
+    }
+    .biosim-img2 img{
+      width: 100%;
     }
   }
   

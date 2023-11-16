@@ -1,82 +1,93 @@
+.line-container {
+  text-align: center;
+  width: 98vw;
+  padding: 0 2vw; /* Adjusted padding for responsiveness */
+}
+
+.line-img1 img,
+.line-img2 img,
+.line-img3 img,
+.line-img4 img,
+.line-img5 img,
+.line-img6 img {
+  width: 100%; /* Make images responsive within their containers */
+}
+
+.line-img1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 4vw; /* Adjusted gap for responsiveness */
+}
+
+.line-img3 {
+  display: flex;
+  gap: 4vw; /* Adjusted gap for responsiveness */
+  justify-content: space-around;
+}
+
+.line-img5 {
+  display: flex;
+  justify-content: center;
+}
+
+.line-img5 img {
+  width: 80%; /* Adjusted width for responsiveness */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.container h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.small-mole-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
   .line-container {
-    text-align: center;
-    width: 98vw;
-    padding: 0 10vw;
+    padding: 0 5vw; /* Adjusted padding for smaller screens */
   }
 
-  .line-img1{
-    display: flex;
-    justify-content: space-around;
-    gap: 4rem;
-  }
-.line-img3{
-  display:flex ;
-  gap: 4rem;
-  justify-content: space-around;
-  
-}
-.line-img3 img{
-  width: 40%;
-}
-.line-img5{
-  display: flex;
-  justify-content:center ;
-}
-.line-img5 img{
-  width: 80%;
-}
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .container h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .container h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .container h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  .container p {
-    font-size: 1em;
-    margin-bottom: 15px;
-  }
-  
-  .flex-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-  }
-  .small-mole-container{
-    display: flex;
+  .line-img1,
+  .line-img3,
+  .line-img4,
+  .line-img6 {
+    gap: 2vw; /* Adjusted gap for responsiveness */
     flex-direction: column;
   }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 600px) {
-    .container h1 {
-      font-size: 1.5em;
-    }
-  
-    .container h2 {
-      font-size: 1.2em;
-    }
-  
-    .container h3 {
-      font-size: 1em;
-    }
-  }
-  
+
+  /* Adjust other styles as needed for smaller screens */
+}

@@ -4,9 +4,8 @@
   width: 100%;
   min-height: 100vh; /* Ensure the container takes at least the full viewport height */
   background-color: #fff;
-
-  
 }
+
 
 .intro {
   /* position: relative; */
@@ -39,14 +38,15 @@
 
 .img-text {
   /* border: 1px solid #fffdfd; */
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-left: 3rem;
   width: 50vw;
 }
 
 .img-text p {
   color: #fff;
   font-style: oblique;
-  font-size: 2.4vw;
+  font-size: 2rem;
 }
 
 .img-container {
@@ -105,4 +105,39 @@
     margin-left: 2.5rem;
     margin-right: 1rem;
   font-weight: 600;
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1200px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .dna-img {
+    width: 100%;
+  }
+
+  .img-text {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .img-text p {
+    font-size: 2rem;
+  }
+
+  .last-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 80vw;
+  }
+
+  .box img {
+    width: 80vw;
+  }
 }

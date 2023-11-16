@@ -31,5 +31,13 @@
     .container h3 {
       font-size: 1em;
     }
+    .pulm-img1{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    .pulm-img1 img {
+      width: 80%;
+    }
   }
   
