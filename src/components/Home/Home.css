@@ -1,9 +1,13 @@
 .home {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
   background-color: #fff;
+
+  
 }
+
 .intro {
   /* position: relative; */
   display: flex;
@@ -18,15 +22,20 @@
   /* border: 1px solid #000; */
 
   display: flex;
-  padding: 2vw 2vw;
   width: 45vw;
   object-fit: contain;
 }
 
-.dna-img img {
-  border-radius: 50px;
- 
+.dna-img img,
+.box img {
+  width: 100%;
+  max-width: 100%; /* Ensure images don't exceed their natural size */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
+
 
 .img-text {
   /* border: 1px solid #fffdfd; */
@@ -47,7 +56,8 @@
 
 .last {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .last-container {
@@ -56,6 +66,7 @@
   justify-content: center;
   gap: 6rem;
   margin-bottom: 4rem;
+  align-items: center;
 }
 
 .box {
@@ -68,13 +79,6 @@
   border-radius: 8px;
   background-color: rgb(241, 237, 237);
   overflow: hidden;
-}
-
-.box img {
-  width: 20vw;
-  border-radius: 8px;
-  margin-bottom: 0;
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .box:hover img {
@@ -99,4 +103,37 @@
 }
 .content p {
   font-weight: 600;
+}
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .dna-img {
+    width: 100%;
+  }
+
+  .img-text {
+    width: 100%;
+  }
+
+  .img-text p {
+    font-size: 4vw;
+  }
+
+  .last-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .box {
+    width: 80vw;
+  }
+
+  .box img {
+    width: 80vw;
+  }
 }

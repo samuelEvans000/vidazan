@@ -1,24 +1,25 @@
-.vision{
+.vision {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     background-color: black;
-}
-.vision-img{
-     position: relative;
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-}
-.vision-img img{
+  }
+  
+  .vision-img {
+    position: relative;
     display: block;
-    width: 100vw;
-    height: 40vh;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .vision-img img {
+    display: block;
+    width: 100%;
+    height: auto;
     opacity: 0.62;
-    /* filter: grayscale(40%); */
-}
-
-.vision-title{
+  }
+  
+  .vision-title {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -27,34 +28,67 @@
     font-size: 4vw; /* Responsive font size */
     font-weight: bold;
     text-align: center;
-}
-
-.cnt-img1{
+    width: 100%;
+  }
+  
+  .cnt-img1 {
     display: block;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     opacity: 0.42;
-    /* filter:; */
-}
-
-.vision-cnt{
+  }
+  
+  .vision-cnt {
     display: flex;
-    width: 100vw;
+    flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
     color: white;
-    font-size: 1.8vw; /* Responsive font size */
+    font-size: 3.8rem; /* Responsive font size */
     font-weight: 600;
-    justify-content: space-evenly;
-    
-}
-.cnt-img2{
-    width: 38vw;
-    /* margin-left: 0rem; */
-}
-.vision-text{
-    width: 40vw;
-}
+    text-align: center; /* Center text on smaller screens */
+    padding: 2rem; /* Add padding for better spacing */
+  
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  .cnt-img2 {
+    width: 100%;
+  }
+  
+  .vision-text {
+    width: 100%;
+    max-width: 40rem; /* Set a max-width for better readability on larger screens */
+    margin: 0 auto; /* Center the content on larger screens */
+    padding: 1rem; /* Add padding for better spacing */
+  
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+      max-width: 100%; /* Use full width on smaller screens */
+    }
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 768px) {
+    .vision-title {
+      font-size: 3rem; /* Adjust font size for medium screens */
+    }
+  
+    .vision-cnt {
+      flex-direction: row;
+      top: 50%;
+    }
+  
+    .vision-text {
+      width: 50%;
+      /* color: black; */
+      font-size: 1rem;
+      max-width: none; /* Remove max-width for larger screens */
+    }
+  }
+  

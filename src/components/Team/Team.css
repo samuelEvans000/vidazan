@@ -1,52 +1,79 @@
-.team{
+.team {
     display: flex;
-    width: 100vw;
     flex-direction: column;
     background-color: #fff;
-
-}
-
-.img-logo{
-    width: 100vw;
-}
-
-.img-logo img{
+  }
+  
+  .img-logo {
+    width: 100%;
+  }
+  
+  .img-logo img {
     object-fit: contain;
-    width: 100vw;
-}
-
-.team-title{
+    width: 100%;
+  }
+  
+  .team-title {
     display: flex;
-    justify-content:center ;
-}
-
-.team-mems{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
-}
-.team-mem{
-    width: 40vw;
+    justify-content: center;
+  }
+  
+  .team-mems {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-mem {
+    width: 80%; /* Adjust as needed */
+    padding: 1rem;
+    margin-bottom: 2rem; /* Add some space between team members */
     border: 1px solid #000;
-}
-
-.mem-intro{
+  }
+  
+  .mem-intro {
     margin-top: 2rem;
     justify-content: space-evenly;
-    align-items:center ;
+    align-items: center;
     display: flex;
-}
-.mem-intro img{
-    width: 10vw;
-    height: 22vh;
-}
-
-
-.mem-cnt p{
-    font-size: 1.4vw;
+    flex-direction: column; /* Adjust for smaller screens */
+  }
+  
+  .mem-intro img {
+    width: 95%; /* Adjust as needed */
+    max-width: 150px; /* Limit the maximum width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .mem-cnt p {
+    font-size: 1rem; /* Use rem for better responsiveness */
     font-weight: 500;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+    margin: 1rem 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .team-mems {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .team-mem {
+      width: 40%; /* Adjust as needed */
+    }
+  
+    .mem-intro {
+      flex-direction: row;
+    }
+  
+    .mem-cnt p {
+      margin: 0; /* Remove margin for larger screens */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .mem-intro img {
+      width: 100%; /* Adjust for smaller screens */
+      max-width: none; /* Remove max-width for smaller screens */
+    }
+  }
+  

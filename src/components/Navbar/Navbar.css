@@ -10,6 +10,10 @@
     position: relative; 
     /* border-bottom: 1px solid #7a7a7a; */
   }
+
+  .sidebar{
+    display: none;
+  }
   
   .logo{
    
@@ -159,6 +163,124 @@
     }
   }
   
+
   
   
+  #page-wrap {
+    text-align: center;
   
+    /* Prevent sidebar from showing a scrollbar on page */
+    overflow: auto;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+  
+  /* The rest copied directly from react-burger-menu docs */
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 72px;
+    display: none;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+    left: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #53a9e2;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: rgba(255, 255, 255, 0.9);
+    width: 54vw;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    display: none;
+  }
+
+  .bm-menu-wrap, .bm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  /* .bm-cross-button{
+    left: 34px;
+  } */
+
+  @media (max-width: 1200px) {
+
+
+    .navbar-content {
+      display: none;
+    }
+  
+    .bm-menu, .sidebar {
+      display: block;
+    }
+  
+    .bm-burger-button {
+      display: block;
+      position: fixed;
+      width: 36px;
+      height: 30px;
+      right: 32px;
+      top: 72px;
+    }
+  
+    .nav-list-1,
+    .nav-list-2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .bm-menu {
+      width: 100%;
+      padding: 2.5em 1em 0;
+    }
+  }

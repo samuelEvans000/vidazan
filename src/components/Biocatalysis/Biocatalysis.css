@@ -1,7 +1,9 @@
 .biocatalysis{
     /* display: flex; */
-    width: 100vw;
     background-color: #fff;
+    width: 98vw;
+    padding: 0 10vw;
+    font-size: 1rem;
 }
 
 .biocat-title, .biocat-img1, .biocat-cnt-t{
@@ -21,7 +23,42 @@
     align-items: center;
 }
 
-.biocat-cnt1, .biocat-cnt2{
+/* .biocat-cnt1, .biocat-cnt2{
     margin-left: 4rem;
     font-size: 2vw;
+} */
+
+/* Add this to your existing CSS */
+
+.biocat-img1 img,
+.biocat-img2 img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
 }
+
+
+/* Add this at the end of your existing CSS */
+
+@media screen and (max-width: 1200px) {
+    .biocat-cnt1, .biocat-cnt2 {
+      margin-left: 2rem; /* Adjust the margin for smaller screens */
+      font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .biocat-imgs {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .biocat-img2 {
+      margin-bottom: 1rem; /* Add some space between vertically stacked images */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .biocat-cnt1, .biocat-cnt2 {
+      margin-left: 1rem; /* Further adjust the margin for even smaller screens */
+      font-size: 1rem; /* Further adjust the font size for even smaller screens */
+    }
+  }
+  

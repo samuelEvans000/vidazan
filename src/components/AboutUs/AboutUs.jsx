@@ -18,9 +18,9 @@ function AboutUs() {
         <Navbar />
       </div>
       <div className="about">
-        <div>
+        {/* <div>
         <ImageSlider images={images}/>
-        </div>
+        </div> */}
         <div className="abt">
             <h1><u>About Us</u></h1>
         </div>

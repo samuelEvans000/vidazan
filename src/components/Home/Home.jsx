@@ -29,7 +29,7 @@ function Home() {
         <div className="img-text">
         <p >
           A Biotech Company with a Global Presence, VidaZan Manufactures
-          Specialty Enzymes, API’s and Biologics on Large, Medium and Small
+          Specialty Enzymes, API's and Biologics on Large, Medium and Small
           scales for a number of sectors. Biocatalysts have created Bio-based
           Value for our customers using a wide spectrum of its Technological,
           Commercial, and Regulatory skills.

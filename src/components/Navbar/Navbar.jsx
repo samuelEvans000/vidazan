@@ -3,6 +3,7 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "/assets/logo.png";
+import SideBar from "./Sidebar";
 
 function Navbar() {
   return (
@@ -12,7 +13,9 @@ function Navbar() {
             <img src={logo} />
         </Link>
       </div>
+      <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
 
+      <div id="page-wrap"></div>
       <div className="navbar-content">
         <nav className="navbar-content-1">
           <ul className="nav-list-1">

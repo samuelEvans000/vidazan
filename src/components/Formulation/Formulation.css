@@ -1,6 +1,7 @@
 .line-container {
     text-align: center;
-    width: 80vw;
+    width: 98vw;
+    min-height: 70vh;
     padding: 0 10vw;
   }
   

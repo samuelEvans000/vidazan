@@ -1,25 +1,37 @@
-.committee{
+.committee {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
-
+    padding: 20px;
+    box-sizing: border-box; /* This ensures padding and border are included in the element's total width and height */
 }
 
-.com-title{
+.com-title {
     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.com-mems {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-
-.com-mems{
-    
-    display: flex;
-    justify-content: space-evenly;
+.com-mem {
+    margin: 10px;
+    text-align: center;
 }
 
-.com-mem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.com-mem img {
+    width: 100%;
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .com-mems {
+        justify-content: space-evenly;
+    }
 }
