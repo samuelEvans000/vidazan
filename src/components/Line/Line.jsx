@@ -11,7 +11,10 @@ function Line() {
       </div>
       <div>
         <div className='line-container'>
+        <div className='line-head'>
+
           <h1>Line of Activity</h1>
+        </div>
           <div className='line-img1'>
           <img src={dna}></img>
           <img src={dna}></img>

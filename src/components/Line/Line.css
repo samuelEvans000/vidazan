@@ -80,7 +80,6 @@
   .line-container {
     padding: 0 5vw; /* Adjusted padding for smaller screens */
   }
-
   .line-img1,
   .line-img3,
   .line-img4,
@@ -90,4 +89,10 @@
   }
 
   /* Adjust other styles as needed for smaller screens */
+}
+
+@media screen and (max-width: 800px) {
+  .line-img5{
+    display: none;
+  }
 }
