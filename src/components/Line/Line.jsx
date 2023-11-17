@@ -6,7 +6,7 @@ import ln2 from '/assets/ln2.jpg'
 import cloning from '/assets/cloning.jpg'
 import enz from '/assets/enz.jpg'
 import enz2 from '/assets/enz2.jpg'
-import Dm from '/assets/D meta.jpg'
+
 
 
 function Line() {
@@ -74,7 +74,7 @@ function Line() {
 
             <h3>Drug Metabolites</h3>
             <div className='line-img5'>
-          <img src={Dm}></img>
+          {/* <img src={Dm}></img> */}
           </div>
             <p>Peptides, Olegonucleotides, Antibody Drug Conjugates, PRPTAC, CAR-T, PDNA& mRNA, Rare Orphan Diseases</p>
           </div>

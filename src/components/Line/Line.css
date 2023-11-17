@@ -5,12 +5,17 @@
 }
 
 
-.line-img2 img,
+
 .line-img3 img,
 .line-img4 img,
 .line-img5 img,
 .line-img6 img {
   width: 100%; /* Make images responsive within their containers */
+}
+
+.line-img2 img{
+    width: 80%;
+    height: 60%;
 }
 
 .line-img1 {
@@ -82,12 +87,20 @@
   .line-container {
     padding: 0 5vw; /* Adjusted padding for smaller screens */
   }
-  .line-img1,
+
   .line-img3,
   .line-img4,
   .line-img6 {
     gap: 2vw; /* Adjusted gap for responsiveness */
     flex-direction: column;
+  }
+
+  .line-img1{
+    flex-direction: column;
+    width: 100%;
+  }
+  .line-img1 img{
+    width: 100%;
   }
 
   /* Adjust other styles as needed for smaller screens */
