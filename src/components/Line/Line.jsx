@@ -1,7 +1,13 @@
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Line.css'
-import dna from '/assets/dna.jpg'
+import ln1 from '/assets/ln1.jpg'
+import ln2 from '/assets/ln2.jpg'
+import cloning from '/assets/cloning.jpg'
+import enz from '/assets/enz.jpg'
+import enz2 from '/assets/enz2.jpg'
+import Dm from '/assets/D meta.jpg'
+
 
 function Line() {
   return (
@@ -16,8 +22,13 @@ function Line() {
           <h1>Line of Activity</h1>
         </div>
           <div className='line-img1'>
-          <img src={dna}></img>
-          <img src={dna}></img>
+            <div className='img1'>
+          <img src={ln1}></img>
+            </div>
+            <div className='img2'>
+          <img src={ln2}></img>
+            </div>
+
           </div>
           <h2>Discovery</h2>
           <p>
@@ -25,15 +36,15 @@ function Line() {
           </p>
           <h2>Bioinformatics, Cloning & Metagenomics</h2>
           <div className='line-img2'>
-          <img src={dna}></img>
+          <img src={cloning}></img>
           </div>
           <p>
             Find the right Enzyme for your process by using Biocatalysts’ in-house Enzyme Discovery Technology
           </p>
           <h2>Enzyme samples</h2>
           <div className='line-img3'>
-          <img src={dna}></img>
-          <img src={dna}></img>
+          <img src={enz}></img>
+          <img src={enz2}></img>
           </div>
           <p>
             Biocatalysts can turn a concept into a reality by delivering a sample of active, soluble enzyme along with a technical summary and specification.
@@ -44,7 +55,7 @@ function Line() {
           </p>
           <h2>Scale-up to Manufacture</h2>
           <div className='line-img4'>
-          <img src={dna}></img>
+          {/* <img src={dna}></img> */}
           </div>
           <p>
             The enzyme landscape is complex. We support our customers in ensuring their exclusive enzyme is compliant for their appropriate commercial uses.
@@ -55,7 +66,7 @@ function Line() {
 
             <h3>Biologics</h3>
             <div className='line-img5'>
-          <img src={dna}></img>
+          {/* <img src={dna}></img> */}
           </div>
             <p>Integrated Drug Discovery</p>
           </div>
@@ -63,7 +74,7 @@ function Line() {
 
             <h3>Drug Metabolites</h3>
             <div className='line-img5'>
-          <img src={dna}></img>
+          <img src={Dm}></img>
           </div>
             <p>Peptides, Olegonucleotides, Antibody Drug Conjugates, PRPTAC, CAR-T, PDNA& mRNA, Rare Orphan Diseases</p>
           </div>
@@ -71,7 +82,7 @@ function Line() {
 
             <h3>Industries and Emerging Biopharma</h3>
             <div className='line-img5'>
-          <img src={dna}></img>
+          {/* <img src={dna}></img> */}
           </div>
             <p>Animal Health, Pharma Biotech, Agrochemical, Nutrition, Specialty Materials.</p>
             </div>
@@ -82,7 +93,7 @@ function Line() {
           </p>
           <h2>Development</h2>
           <div className='line-img6'>
-          <img src={dna}></img>
+          {/* <img src={dna}></img> */}
           </div>
           <p>
             Chemical Development, Formulation Development, Clinical Development

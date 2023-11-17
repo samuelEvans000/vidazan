@@ -3,6 +3,11 @@ import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Biosimilars.css'
 import dna from '/assets/dna.jpg'
+import Bs1 from "/assets/Bs1.jpg";
+import Bs2 from "/assets/Bs2.jpg";
+import Bs3 from "/assets/Bs3.jpg";
+import Bs4 from "/assets/Bs4.jpg";
+
 
 
 function Biosimilars() {
@@ -15,8 +20,8 @@ function Biosimilars() {
         <div className='line-container'>
           <h1>Biosimilars</h1>
           <div className='biosim-img1'>
-          <img src={dna}></img>
-          <img src={dna}></img>
+          <img src={Bs1}></img>
+          <img src={Bs2}></img>
 
           </div>
           <h2>Discovery and Development of Novel Biologics</h2>
@@ -39,7 +44,7 @@ function Biosimilars() {
           </p>
           <h2>Validation, quality control and compliance</h2>
           <div className='biosim-img2'>
-          <img src={dna}></img>
+          <img src={Bs3}></img>
           </div>
 
           <p>
@@ -53,7 +58,7 @@ function Biosimilars() {
 
           <h2>Products for Food for healthier and more sustainably produced Food</h2>
           <div className='biosim-img1'>
-          <img src={dna}></img>
+          <img src={Bs4}></img>
           <img src={dna}></img>
 
           </div>

@@ -4,7 +4,7 @@
   padding: 0 2vw; /* Adjusted padding for responsiveness */
 }
 
-.line-img1 img,
+
 .line-img2 img,
 .line-img3 img,
 .line-img4 img,
@@ -18,6 +18,8 @@
   justify-content: space-around;
   gap: 4vw; /* Adjusted gap for responsiveness */
 }
+
+
 
 .line-img3 {
   display: flex;

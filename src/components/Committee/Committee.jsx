@@ -7,10 +7,11 @@ import './Committee.css'
 
 function Committee() {
     const images = [
-        "/assets/image1.jpg",
-        "/assets/image2.jpg",
-        "/assets/image3.jpg",
-        "/assets/image4.jpg",
+        "/assets/img1.jpg",
+    "/assets/img2.jpg",
+    "/assets/img3.jpg",
+    "/assets/img4.jpg",
+    "/assets/pul2.jpg",
     ];
 
     return (
