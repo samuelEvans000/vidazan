@@ -19,10 +19,10 @@ function Committee() {
             <div>
                 <Navbar />
             </div>
-            <div className='committee'>
-                <div>
+                <div className='im-sl'>
                     <ImageSlider images={images} />
                 </div>
+            <div className='committee'>
                 <div className='com-title'>
                     <h1>Our Committee</h1>
                 </div>
