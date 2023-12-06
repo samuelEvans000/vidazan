@@ -2,7 +2,11 @@
 import Footer from '../Footer/Footer'
 import Navbar from '../Navbar/Navbar'
 import './Pulmonary.css'
-import dna from '/assets/dna.jpg'
+import pul1 from "/assets/pul1.jpg";
+import pul2 from "/assets/pul2.jpg";
+import img1 from '/assets/img1.jpg'
+
+
 
 function Pulmonary() {
   return (
@@ -32,9 +36,9 @@ function Pulmonary() {
         </ul>
     </div>
     <div className='pulm-img1'>
-        <img src={dna}></img>
-        <img src={dna}></img>
-        <img src={dna}></img>
+        <img src={pul1}></img>
+        <img src={pul2}></img>
+        <img src={img1}></img>
     </div>
     <div>
         <Footer/>

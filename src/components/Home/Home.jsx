@@ -1,6 +1,10 @@
 // import React from 'react'
 import "./Home.css";
 import dna from "/assets/dna.jpg";
+import vision from "/assets/vision.jpg";
+import mission from "/assets/mission.jpg";
+import value from "/assets/value.jpg";
+
 import ImageSlider from "../imageSlider/imageSlider";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -8,10 +12,11 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const images = [
-    "/assets/image1.jpg",
-    "/assets/image2.jpg",
-    "/assets/image3.jpg",
-    "/assets/image4.jpg",
+    "/assets/img1.jpg",
+    "/assets/img2.jpg",
+    "/assets/img3.jpg",
+    "/assets/img4.jpg",
+    "/assets/pul2.jpg",
   ];
 
  
@@ -45,7 +50,7 @@ function Home() {
       <div className="last-container">
         <div className="box">
         <div className="box-img">
-          <img src={dna}></img>
+          <img src={vision}></img>
           </div>
           <div className="content">
             <h4>Our Vision</h4>
@@ -58,7 +63,7 @@ function Home() {
         </div>
         <div className="box">
           <div className="box-img">
-          <img src={dna}></img>
+          <img src={mission}></img>
           </div>
           <div className="content">
             <h4>Our Mission</h4>
@@ -70,7 +75,7 @@ function Home() {
         </div>
         <div className="box">
         <div className="box-img">
-          <img src={dna}></img>
+          <img src={value}></img>
           </div>
           <div className="content">
             <h4>Our Values</h4>

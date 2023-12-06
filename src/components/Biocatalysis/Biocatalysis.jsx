@@ -2,7 +2,12 @@
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Biocatalysis.css";
-import dna from "/assets/dna.jpg";
+
+import bioc1 from "/assets/biocatalyst.jpg";
+import bioc2 from "/assets/Bio betters.jpg";
+import F1 from "/assets/F1.jpg";
+
+
 
 function Biocatalysis() {
   return (
@@ -15,7 +20,7 @@ function Biocatalysis() {
           <h1>Biocatalysis</h1>
         </div>
         <div className="biocat-img1">
-          <img src={dna}></img>
+          <img src={bioc1}></img>
         </div>
         <div className="biocat-cnt-t">
           <h3>
@@ -37,10 +42,10 @@ function Biocatalysis() {
         </div>
         <div className="biocat-imgs">
           <div className="biocat-img2">
-            <img src={dna}></img>
+            <img src={bioc2}></img>
           </div>
           <div className="biocat-img2">
-            <img src={dna}></img>
+            <img src={F1}></img>
           </div>
         </div>
         <div className="biocat-cnt2">

@@ -7,10 +7,11 @@ import './Committee.css'
 
 function Committee() {
     const images = [
-        "/assets/image1.jpg",
-        "/assets/image2.jpg",
-        "/assets/image3.jpg",
-        "/assets/image4.jpg",
+        "/assets/img1.jpg",
+    "/assets/img2.jpg",
+    "/assets/img3.jpg",
+    "/assets/img4.jpg",
+    "/assets/pul2.jpg",
     ];
 
     return (
@@ -18,10 +19,10 @@ function Committee() {
             <div>
                 <Navbar />
             </div>
-            <div className='committee'>
-                <div>
+                <div className='im-sl'>
                     <ImageSlider images={images} />
                 </div>
+            <div className='committee'>
                 <div className='com-title'>
                     <h1>Our Committee</h1>
                 </div>

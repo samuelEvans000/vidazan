@@ -1,7 +1,7 @@
 // import React from 'react'
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
-import dna from "/assets/dna.jpg";
+import value from "/assets/value.jpg";
 import vmv from "/assets/vmv.jpg";
 import "./Values.css";
 
@@ -19,7 +19,7 @@ function Values() {
           </h1>
         <div className="vision-cnt">
           <div className="vision-img2">
-            <img className="cnt-img2" src={dna}></img>
+            <img className="cnt-img2" src={value}></img>
           </div>
           <div className="vision-text">
             <p>

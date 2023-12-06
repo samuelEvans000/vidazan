@@ -2,9 +2,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     box-sizing: border-box; /* This ensures padding and border are included in the element's total width and height */
+}
+
+.im-sl{
+    width: 100%;
 }
 
 .com-title {
@@ -17,6 +22,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
+
+margin-bottom: 15px;
+
 }
 
 .com-mem {
@@ -27,11 +36,16 @@
 .com-mem img {
     width: 100%;
     max-width: 200px; /* Adjust as needed */
-    height: auto;
+    height: 90%;
+    border-radius: 50%;
+
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .com-mems {
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
+
     }
 }
