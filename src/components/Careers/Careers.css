@@ -1,0 +1,21 @@
+.career-container{
+    margin: 12rem;
+    min-height: 34vh;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .career-container{
+        margin: 6rem;
+        font-size: 1rem;
+        min-height: 50vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .career-container{
+        margin: 3rem;
+        font-size: 1rem;
+        min-height: 66vh;
+    }
+  }

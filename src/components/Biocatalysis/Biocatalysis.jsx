@@ -28,13 +28,12 @@ function Biocatalysis() {
             to produce organic compounds
           </p>
           <p>❈ It has many advantages over chemical synthesis</p>
-          <ul>
-            <li>Enzymes are efficient chiral catalysts</li>
-            <li>Chemo-, regio- and enantioselectivity</li>
-            <li>Mild conditions</li>
-            <li>Catalyze broad spectrum of reactions</li>
-            <li>Environmentally acceptable</li>
-          </ul>
+          <p>❈ Enzymes are efficient chiral catalysts</p>
+          <p>❈ Chemo-, regio- and enantioselectivity</p>
+          <p>❈ Mild conditions</p>
+          <p>❈ Catalyze broad spectrum of reactions</p>
+          <p>❈ Environmentally acceptable</p>
+
         </div>
         <div className="biocat-imgs">
           <div className="biocat-img2">
@@ -50,14 +49,10 @@ function Biocatalysis() {
             synthesis of Active Pharmaceutical Intermediates
           </p>
           <p>❈ Improvement of Biocatalyst activity </p>
-          <ul>
-            <li>Directed evolution biocatalysts</li>
-            <li>Rational design, </li>
-            <li>
+          ❈ Directed evolution biocatalystsRational design, 
               Environmental engineering approaches and physical stabilization
               strategies
-            </li>
-          </ul>
+          
           <p>
           ❈ Optimization of the process parameters for the biocatalyst
             production (shake flask as well as bioreactor level) and their
